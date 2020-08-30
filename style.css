@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+  }
+
+.testimonialContainer {
+    display: flex;
+    padding: 50px 70px 0px 150px;
+}
+.textContainer {    /*__________text container_________*/
+    padding-top: 170px;
+    width: 50%;
+    position: relative;
+}
+.bg-quote {
+    position: absolute;
+    z-index: 1;
+    left: 80px;
+}
+.text {
+    width: 125%;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    position: absolute;
+    top: 210px;
+    z-index: 10;
+}
+.person_bio {
+    font-size: 22px;
+}
+.person_bio p {
+    display: inline;
+    color: lightslategray;
+}
+
+.imageContainer {    /* _____________image container______*/
+    width: 50%;
+    position: relative;
+}
+.personImage {
+    position: absolute;
+    top: 9.5%;
+    left: 9%;
+}
+.nav-container {
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    border-radius: 39px;
+    box-shadow: 5px 5px 20px hsl(240, 18%, 77%);
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+}
+button {
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    outline: none;
+    background-color: white;
+    transition-duration: 0.7s;
+}
+button:hover, button:active{
+    background-color: #e7e7e7;
+    outline: none;
+}
+#previousButton {
+    border-radius: 48% 0 0% 48%;
+}
+#nextButton {
+    border-radius: 0 48% 48% 0;
+}
+body {
+ position: relative;   
+}
+.pattern-curve {
+    position: fixed;
+    bottom: 5px;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+/* ______________________________________________________Responsive to mobiles_______________________________________________________________ */
+
+@media screen and (max-width: 500px) {
+    .testimonialContainer {
+        padding: 10px;
+        flex-direction: column-reverse;
+    }
+    .textContainer {
+        padding-top: 0px;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .bg-quote {
+        position: absolute;
+        left: 41%;
+        top: 20px;
+    }
+    .quote {
+        width: 60%;
+    }
+    .text {
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+        padding: 0 20px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        position: absolute;
+        top: 40px;
+        line-height: 26px;
+        z-index: 10;
+    }
+    .person_bio {
+        font-size: 16px;
+    }
+    .person_bio p {
+        display: block;
+        margin-top: 5px;
+        color: lightslategray;
+    }
+
+    .imageContainer {
+        width: 100%;
+        position: relative;
+    }
+    .pattern-bg {
+        width: 100%;
+    }
+    .personImage {
+        position: absolute;
+        top: 9.5%;
+        left: 12%;
+    }
+    #profileimage {
+        width: 88%;
+        height: auto;
+    }
+    .nav-container {
+        width: 80px;
+        height: 40px;
+        background-color: white;
+        border-radius: 39px;
+        box-shadow: -31px 7px 30px hsl(240, 18%, 77%);
+        position: absolute;
+        bottom: 4%;
+        left: 40%;
+    }
+    button {
+        width: 40px;
+        height: 40px;
+        border-style: none;
+        background-color: white;
+    }
+    #previousButton {
+        border-radius: 48% 0 0% 48%;
+    }
+    #nextButton {
+        border-radius: 0 48% 48% 0;
+    }
+    body {
+     position: relative;   
+    }
+    .pattern-curve {
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        left: -10px;
+    }
+    
+}
+
+
+
+
